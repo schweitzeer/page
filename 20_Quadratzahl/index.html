@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Berechnung</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+
+			// Programmiere hier die Funktion calc(number)
+			
+			function clicked() {
+				var input = document.getElementById("idInput").value;
+				var output = calc(input);
+				document.getElementById("idOutput").innerHTML = output;
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<h1>Berechnung</h1>
+		Eingabe: <input id="idInput" type="text" value=""><br /><br />
+		<button onClick="clicked();">Berechne etwas!</button><br /><br />
+		<div id="idOutput">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
+	</body>
+</html>
